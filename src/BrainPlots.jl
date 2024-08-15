@@ -3,6 +3,8 @@ module BrainPlots
 using Pkg.Artifacts
 using CairoMakie,FileIO,MeshIO
 
+export fsaverage_path,fsaverage
+
 """
 	fsaverage_path(;hemi={:left,:right})
 
@@ -27,5 +29,7 @@ function fsaverage(;hemi=:left)
 	return load(fsaverage_path(;hemi))
 end
 
+
+include("graphing.jl")
 
 end # module BrainPlots
