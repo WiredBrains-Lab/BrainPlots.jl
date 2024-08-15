@@ -1,6 +1,6 @@
 module BrainPlots
 
-import Pkg.Artifacts
+using Pkg.Artifacts
 
 function fsaverage_path(;hemi=:left)
 	if hemi==:left
