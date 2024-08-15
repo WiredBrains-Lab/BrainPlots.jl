@@ -1,6 +1,6 @@
 module BrainPlots
 
-import Pkg.Artifacts
+using Pkg.Artifacts
 using CairoMakie,FileIO,MeshIO
 
 """
