@@ -2,8 +2,10 @@ module BrainPlots
 
 using Pkg.Artifacts
 using CairoMakie,FileIO,MeshIO
+using NearestNeighbors,Colors,Distributions
 
 export fsaverage_path,fsaverage
+export brainscatter,brainmesh
 
 """
 	fsaverage_path(;hemi={:left,:right})
