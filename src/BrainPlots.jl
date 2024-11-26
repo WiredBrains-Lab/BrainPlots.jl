@@ -7,6 +7,8 @@ using NearestNeighbors,Colors,Distributions
 export fsaverage_path,fsaverage
 export brainscatter,brainmesh
 
+export Point3f
+
 """
 	fsaverage_path(;hemi={:left,:right})
 
