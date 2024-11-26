@@ -12,7 +12,7 @@ Graph the mesh `brain` and draw spheres at `points` locations.
 
 `points` can either be a Vector of coordinates or Pairs of (color,coordinate)
 """
-function brainscatter(brain::MeshIO.Mesh,points::Vector{Union{Pair{Any,Vector{Point3f}},Vector{Point3f}}};
+function brainscatter(brain::MeshIO.Mesh,points,
         size=(1200,500),
         color=:red,
         markersize=2,
